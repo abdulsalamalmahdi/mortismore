@@ -24,32 +24,52 @@ const trd = useRef(null)
 const one = useRef(null)
 const btn = useRef(null)
  
-const [pause, setPause] = useState(true);
+const [pause, setPause] = useState(false);
 useEffect(()=>{
 
- 
-const tl = gsap.timeline({ repeat: 2, repeatDelay: 1, yoyo: true});
-console.log(pause)
+  
+   
+  
 
- if (pause){ 
-   
-  tl.kill();
-    }
-    if(!pause){
-     tl.resume()
-    }
-     tl.to(one.current, { duration: 4,ease: "power3.outout", y: -150 },);
-    tl.to(frs.current, { duration: 3,ease: "power3.outout", y:- 500 }, );
-    tl.to(scd.current, { duration: 7,ease: "power3.outout", y: -1400 }, );
-    tl.to(trd.current, { duration: 9,ease: "power3.outout", y: -2600 },'<3' );
-   
-}, [pause])
+const tl = gsap.timeline({ repeat: -1, yoyo: true});
+ 
+   tl.to(
+     one.current, 
+     { duration: 0.1,
+      ease: "power3.outout",
+      scale: 1.01,
+      // x: [20,-20],
+      // y: [20,-20],
+    });
+    tl.from(frs.current,
+       { duration: 0.1,
+        ease: "power3.outout",
+        scale: 1.01,
+        // x: [20,-20],
+        // y: [20,-20],
+      });
+    tl.to(scd.current, 
+      { duration: 0.1,
+        ease: "power3.outout",
+        scale: 1.01,
+        // x: [20,-20],
+        // y: [20,-20],
+      });
+    tl.from(trd.current,
+       { duration: 0.1,
+        ease: "power3.outout", 
+        scale: 1.01,
+        // x: [20,-20],
+        // y: [20,-20],
+      });
+  
+}, [])
 
 
   return (
     <div style={{ display: "flex" }}>
       <div className="wrapper-container">
-        <button className="btn"  ref={btn} onClick={() => setPause(!pause)}><span>Pause</span></button>
+        {/* <button className="btn"  ref={btn} onClick={() => setPause(!pause)}><span>Pause</span></button> */}
         <div className="credit-container" id="wrapper">
           <div className="credit-items" ref={sliderRef}>
             <div className="credit-item" ref={one}>

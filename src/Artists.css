@@ -1,3 +1,9 @@
+@font-face {
+    font-family: aegina ;
+    src: url('./fonts/aegina.ttf');
+  }
+
+
 .credit-container {
     margin: 20px 0;
     position: relative;
@@ -38,7 +44,7 @@
     flex-direction: column;
     align-items: center;
     font-size: xx-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: aegina;
     color: white;
 }
 

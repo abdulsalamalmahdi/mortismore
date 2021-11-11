@@ -48,21 +48,28 @@ export default function Home() {
   return (
     // <main style={{ padding: "1rem" }}>
     <>
-    
       <div className="wrapper-container">
+        <div className="txt_container">
+          <h1>MORE IS MORE</h1>
+          <h3>FUNERAL ARTS AND CRAFTS</h3>
+          <address> RUE DE LIBRE EXAMINE 15</address>
+
+          <h2>BRASSERIE ATLAS</h2>
+          <section>22/10/2022-23/11/2021</section>
+        </div>
         <div className="carousel-container" id="wrapper">
           <div className="carousel-items" ref={wrapperRef}>
             <div ref={img1} className="carousel-item">
-              <img src={"./01.jpg"} alt="" />
+              <img src={"./1.jpg"} alt="" />
             </div>
             <div ref={img2} className="carousel-item">
-              <img src={"./02.jpg"} alt="" />
+              <img src={"./2.jpg"} alt="" />
             </div>
             <div ref={img3} className="carousel-item">
-              <img src={"./03.jpg"} alt="" />
+              <img src={"./3.jpg"} alt="" />
             </div>
             <div ref={img4} className="carousel-item">
-              <img src={"./04.jpg"} alt="" />
+              <img src={"./4.jpg"} alt="" />
             </div>
           </div>
         </div>

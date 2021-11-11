@@ -1,3 +1,8 @@
+@font-face {
+  font-family: aegina ;
+  src: url('./fonts/aegina.ttf');
+}
+
 .App {
   text-align: center;
  
@@ -56,18 +61,23 @@ justify-content: center;
   border: 1px solid white;
   color: white;
   margin-left: 10rem;
-  font-family: fantasy;
-  padding: 1rem;
+  font-family:aegina;
+ 
   width: 7%;
   text-align: center;
   justify-self: center;
   align-self: center;
   margin-top: 1rem;
   font-size:x-large;
+  text-decoration: none;
+  text-align: center;
  
   
 }
 
+/* a :hover{
+  background-color: #6d6e6f;
+} */
 .logo_link{
   display: block;
   position: absolute;
@@ -84,3 +94,13 @@ justify-content: center;
   display: block;
   width: 100%;
 }
+
+.txt_container{
+  position: absolute;
+    width: 100%;
+    z-index: 999;
+    height: 50%;
+    font-size: xx-large;
+    font-family: 'aegina';
+}
+
