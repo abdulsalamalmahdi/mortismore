@@ -2,16 +2,15 @@
 
 import * as React from 'react';
 import '../Menu.css'
-export default function Menu() {
-
+export default function Menu(props) {
+console.log(props)
     
   return (
   
-      <ul>
-          <li>dfdfdsfdfdfd</li>
-          <li>lskffffffffd</li>
-          <li>lskd</li>
-          <li>lskd</li>
+      <ul className="ul_list">
+         {props.ls.map(it=>{
+           return <li className="ul_item">{it.Name}</li>
+         })}
       </ul>
     
   );

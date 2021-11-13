@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import { getInvoices } from "../data";
 
+
 // function QueryNavLink({ to, ...props }) {
 //   let location = useLocation();
 //   return <NavLink to={to + location.search} {...props} />;
@@ -17,6 +18,9 @@ import { getInvoices } from "../data";
 
 export default function Artists() {
   //   let [searchParams, setSearchParams] = useSearchParams({ replace: true });
+
+
+
 const sliderRef = useRef(null)
 const frs = useRef(null)
 const scd = useRef(null)
