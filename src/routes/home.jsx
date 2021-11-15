@@ -48,7 +48,7 @@ export default function Home() {
   return (
     // <main style={{ padding: "1rem" }}>
     <>
-      <div className="wrapper-container">
+      <div className="home-container">
         <div className="txt_container">
           <h1>MORE IS MORE</h1>
           <h3>FUNERAL ARTS AND CRAFTS</h3>

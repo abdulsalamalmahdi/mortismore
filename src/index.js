@@ -9,13 +9,15 @@ import Links from './routes/links';
 import './main.css';
 import './index.css';
 import App from './App';
+import Logo from './routes/logo';
 import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
+      <Route path="/" element={<App/>}>
+      <Route path="/logo" element={<Logo/>}/>
       <Route path="home" element={<Home />} />
         <Route path="exibtions" element={<Exibtions />} />
         <Route path="crafts" element={<Crafts />} /> 

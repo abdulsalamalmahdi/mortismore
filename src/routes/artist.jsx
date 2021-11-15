@@ -72,7 +72,7 @@ const tl = gsap.timeline({ repeat: -1, yoyo: true});
 
   return (
     <div style={{ display: "flex" }}>
-      <div className="wrapper-container">
+      <div className="credit_wrapper-container">
         {/* <button className="btn"  ref={btn} onClick={() => setPause(!pause)}><span>Pause</span></button> */}
         <div className="credit-container" id="wrapper">
           <div className="credit-items" ref={sliderRef}>
