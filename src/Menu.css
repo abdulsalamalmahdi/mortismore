@@ -1,24 +1,27 @@
-ul{
-    margin: 0;
-    padding: 0.1px;
-    display: flex;
+ul {
+  margin: 0;
+  padding: 0.1px;
+  display: flex;
     flex-direction: column;
-    background-color: white;
-    position: absolute;
-    width: -moz-fit-content;
-    width: 7%;
-    color: #050505;
-    list-style-type: none;
-    justify-items: center;
-    height: -moz-fit-content;
-    height: fit-content;
-    z-index: 9999;
-     
+  background-color: white;
+  position: absolute;
+  width: -moz-fit-content;
+  width: 60px;
+  color: #050505;
+  list-style-type: none;
+  justify-items: center;
+  height: -moz-fit-content;
+  height: 50vh;
+  z-index: 9999;
+ 
 }
-li{
-   width: fit-content;
-    padding: 0.1em;
-   justify-self: center;
-   font-size: medium;
-   height: fit-content;
+li {
+  width: fit-content;
+  padding: 0.1em;
+  justify-self: center;
+  font-size: medium;
+  height: fit-content;
+ 
+  
+ 
 }
