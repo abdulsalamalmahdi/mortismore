@@ -44,7 +44,7 @@ const menu = useRef(null);
        tl_2.fromTo(window_1, {autoAlpha:0 }, { duration: 0.5, autoAlpha: 1, opacity: 1 })
        .fromTo(window_2, {autoAlpha:0 }, { duration: 0.6, autoAlpha: 1, opacity: 1 }, '50%')
        .fromTo(window_3, {autoAlpha:0 }, { duration: 0.6, autoAlpha: 1, opacity: 1 }, '50%')
-
+ 
       tl.fromTo(hand, { y: '+=350' }, { duration: 1.5, y: '-=350', autoAlpha: 1, opacity: 1 })
 
     
