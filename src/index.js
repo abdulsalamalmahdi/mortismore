@@ -22,7 +22,7 @@ ReactDOM.render(
         <Route path="exibtions" element={<Exibtions />} />
         <Route path="crafts" element={<Crafts />} /> 
         <Route path="links" element={<Links />} />
-        <Route path="artist" element={<Artist />}> 
+        <Route path="artist/:id" element={<Artist />}> 
         </Route>
 
         <Route

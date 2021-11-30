@@ -24,6 +24,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    z-index: 2;
     
   }
 .carousel-items{
@@ -63,4 +64,5 @@ section{
 
 .txt_container{
   margin-top: 6rem;
+  z-index: 3;
 }

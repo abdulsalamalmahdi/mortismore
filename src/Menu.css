@@ -1,24 +1,144 @@
-ul{
-    margin: 0;
-    padding: 0.1px;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    position: absolute;
-    width: -moz-fit-content;
-    width: 7%;
-    color: #050505;
-    list-style-type: none;
-    justify-items: center;
-    height: -moz-fit-content;
-    height: fit-content;
-    z-index: 9999;
-     
+
+   
+ ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
-li{
-   width: fit-content;
-    padding: 0.1em;
-   justify-self: center;
-   font-size: medium;
-   height: fit-content;
+ 
+div.drop{ 
+  left: 85%;
+  position: absolute; 
+  height: 35%;
+  color: white;
+  /* margin-left: 10rem; */
+  font-family: aegina;
+  width: 10%;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  margin-top: 1rem;
+  font-size: x-large;
+  text-decoration: none;
+  text-align: center;
+  background-color:transparent;
+  top: 10%;
+}
+ 
+div.drop li{ 
+  font-weight: bold; 
+  /* float: left;  */
+  width: 180px; 
+  position: relative;
+  /* background: black; */
+  font-size: small;
+}
+ 
+div.drop a:hover{ 
+  color: #000; 
+}
+ 
+div.drop li a { 
+  display: block; 
+  padding: 20px 8px;
+  color: white; 
+  position: relative; 
+  z-index: 2000; 
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+}
+ 
+div.drop li a:hover,
+div.drop li a.hover{ 
+  background:black;
+  position: relative;
+  color: white;
+}
+ 
+ 
+div.drop ul{ 
+display: none;
+ position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 150px; 
+  z-index: 1000;  
+}
+ 
+/* .drop:hover{
+  display: flex;
+  flex-direction: column;
+    align-content: center;
+    align-items: center;
+} */
+ 
+div.drop ul li a{ 
+  display: block; 
+  color: black !important;
+  background: white !important;
+  height: 10px;
+  width: 90%;
+  overflow: hidden;
+} 
+ 
+div.drop ul li a:hover{
+  display: block; 
+  background: black !important;
+  color: white !important;
+  
+} 
+ 
+.drop > a{
+  position: relative;
+
+}
+ .drop{
+   margin-left: 1rem;
+   color: white;
+ 
+   width: 100%;
+ }
+
+ .subItems{
+   background: transparent;
+   width:50%;
+   /* display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: center; */
+  
+ }
+.sub_item{
+  width: 150px;
+  background: rgb(114, 114, 114); 
+  color: rgb(255, 255, 255); 
+  border-bottom: 1px solid #ccc; 
+  margin-bottom: 0.5rem;
+height: fit-content;
+
+}
+ .sub_item:hover {
+  background-color: rgb(128, 126, 126);
+  color: #fafafa;
+  background: rgb(255, 255, 255); 
+  
+
+}
+
+ .drop svg:hover {
+   color: black;
+ }
+
+ 
+@keyframes slidein {
+  from {
+    transform: scaleX(1.1);
+    width: 100%;
+  }
+
+  to {
+    transform: scaleX(1);
+    width: 100%;
+  }
 }
