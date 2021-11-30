@@ -1,18 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import './Menu.css'
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import Menu from './routes/dropdown'
 import { useRef, useState, useEffect } from 'react';
 import Home from './routes/home.jsx'
-import artists from './assets/artist.json'
 import{ReactComponent as Zombie} from './assets/zombie2.svg'
 import gsap from 'gsap'
+import $ from 'jquery'
+import { AiFillBook } from "react-icons/ai";
 
 
 function App() {
+
+
+ 
+  
 const location = useLocation();
 console.log(location.pathname)
-const ls = artists.ls;
+
 const zWrapper = useRef(null);
 const menu = useRef(null);
 
@@ -29,6 +35,13 @@ const menu = useRef(null);
    }
  })
  
+
+ // fetch json data 
+
+ const getData=()=>{
+ console.log("mouseover")
+}
+
   useEffect(() => {
     const [svgElements] = zWrapper.current.children;
 
@@ -47,7 +60,9 @@ const menu = useRef(null);
  
       tl.fromTo(hand, { y: '+=350' }, { duration: 1.5, y: '-=350', autoAlpha: 1, opacity: 1 })
 
+
     
+      
     
   },[]);
 
@@ -79,9 +94,7 @@ const menu = useRef(null);
        </Link>
        <nav className="nav" >
         <Link className='link' to="/exibtions">EXIBITIONS</Link> |{' '}
-        <Link ref={menu} className='link list' onClick={()=> setToggle(!toggle)} to="/artist">Artists
-        {toggle? <Menu ls={ls} />:null}
-        </Link>
+       <Menu></Menu>
         <Link className='link' to="/crafts">Crafts</Link>
         <Link className='link' to="/links">Links</Link>
       </nav>

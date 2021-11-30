@@ -61,7 +61,7 @@
 }
 
 .link {
-  border: 1px solid white;
+
   color: white;
   margin-left: 10rem;
   font-family: aegina;
@@ -110,7 +110,7 @@
 }
 
 .list {
-  border: 1px solid white;
+ 
   color: white;
   margin-left: 10rem;
   font-family: aegina;
@@ -153,6 +153,126 @@ li.ul_item:hover {
   animation-name: slidein;
 
 }
+
+@keyframes slidein {
+  from {
+    transform: scaleX(1.1);
+    width: 100%;
+  }
+
+  to {
+    transform: scaleX(1);
+    width: 100%;
+  }
+}
+
+ 
+
+ 
+ul.dropdown{ 
+  position: absolute; 
+  width: 100vw; 
+  height: 10%;
+ /* display: flex; */
+ /* justify-content: space-around; */
+ /* align-items: center; */
+  background-color: black;
+  z-index: 9999;
+}
+ 
+ul.dropdown li{ 
+  font-weight: bold; 
+  float: left; 
+  width: 180px; 
+  position: relative;
+  /* background: black; */
+
+}
+ 
+ul.dropdown a:hover{ 
+  color: #000; 
+}
+ 
+ul.dropdown li a { 
+  display: block; 
+  padding: 20px 8px;
+  color: white; 
+  position: relative; 
+  z-index: 2000; 
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+}
+ 
+ul.dropdown li a:hover,
+ul.dropdown li a.hover{ 
+  background:black;
+  position: relative;
+  color: white;
+}
+ 
+ 
+ul.dropdown ul{ 
+ display: none;
+ position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 150px; 
+  z-index: 1000;
+}
+ 
+
+ 
+ul.dropdown ul li a{ 
+  display: block; 
+  color: black !important;
+  background: white !important;
+  height: 10px;
+  width: 90%;
+  overflow: hidden;
+} 
+ 
+ul.dropdown ul li a:hover{
+  display: block; 
+  background: black !important;
+  color: white !important;
+  
+} 
+ 
+.drop > a{
+  position: relative;
+
+}
+ .drop{
+   margin-left: 1rem;
+   color: white;
+  
+   width: 100%;
+ }
+
+ .subItems{
+   background: gray;
+   width:50%;
+ }
+.sub_item{
+  width: 150px;
+  background: rgb(2, 2, 2); 
+  color: rgb(255, 255, 255); 
+  border-bottom: 1px solid #ccc; 
+  margin-bottom: 0.5rem;
+height: fit-content;
+
+}
+ .sub_item:hover {
+  background-color: rgb(7, 7, 7);
+  color: #fafafa;
+  background: rgb(255, 255, 255); 
+  
+
+}
+
+ 
+
 
 @keyframes slidein {
   from {
