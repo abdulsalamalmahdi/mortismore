@@ -7,7 +7,7 @@ import '../Menu.css'
 import $ from 'jquery'
 import { FaSkull } from "react-icons/fa";
 
-export default function Menu(props) {
+export default function Menu() {
 
   const [ls, setLs] = useState([]);
 

@@ -7,34 +7,60 @@ import {
   NavLink,
   Outlet,
   useSearchParams,
-  useParams
+  useParams,
 } from "react-router-dom";
 import { getInvoices } from "../data";
 import userEvent from "@testing-library/user-event";
-import artists from '../assets/ex.json'
-
-
-
+ import artists from './ex.json'
 
 export default function Artists() {
- const {id} = useParams();
- console.log(typeof id)
-  const artist = artists.feeds.find((ar)=> {
-    console.log(typeof ar.id)
-    return ar.id === parseInt(id);
-  })
-  console.log(artist)
+  const { id } = useParams();
+  const [ls, setLs] = useState([]);
+  const [artist, setArtist] = useState({});
 
- return (
-   <div className="art_contaienr">
-   <div className="card">
-     <span>{artist.name}</span>
-     <img src='1.jpg' alt="" />
-     </div>
-     <span className="desc">{artist.description}</span>
-   <div className="artist">{artist.location}</div>
-  </div>
- )
+  useEffect(() => {
+
+
+    const list = artists.feeds;
+    setLs(list)
+    const ar = list.find(re=> re.id === parseInt(id))
+    setArtist(ar)
+    console.log(ar)
+  //   fetch("/ex.json", {
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       Accept: "application/json",
+  //     },
+  //   })
+  //     .then((res) => {
+  //       console.log(res);
+  //       return res.json();
+  //     })
+  //     .then((js) => {
+  //       setLs(js.feeds);
+  //       console.log(ls);
+  //        const ar = ls.find((ar) => {
+  //   console.log(typeof ar.id);
+  //   return ar.id === parseInt(id);
+  // });
+
+  // setArtist(ar);
+  // console.log(artist)
+  //     });
+  }, [id]);
  
+  // const artist = artist.feeds.find(ar => ar.id === parseInt(id))
 
+  return (
+   
+      <div className="art_contaienr">
+        <div className="card">
+          <span>{artist.name}</span>
+          <img src={artist.profilePicture} alt="" />
+        </div>
+        <span className="desc">{artist.description}</span>
+        <div className="artist">{artist.location}</div>
+      </div>
+    
+  );
 }
