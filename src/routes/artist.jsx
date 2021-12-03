@@ -23,9 +23,9 @@ export default function Artists() {
 
     const list = artists.feeds;
     setLs(list)
-    const ar = list.find(re=> re.id === parseInt(id))
+    const ar = list.find(re=> re.id === id)
     setArtist(ar)
-    console.log(ar)
+    console.log(ar.url)
   //   fetch("/ex.json", {
   //     headers: {
   //       "Content-Type": "application/json",
@@ -60,6 +60,7 @@ export default function Artists() {
         </div>
         <span className="desc">{artist.description}</span>
         <div className="artist">{artist.location}</div>
+        <video src={artist.url}></video>
       </div>
     
   );

@@ -95,7 +95,7 @@ $(function(){
     <ul className="subItems">
       <div className="label">artists</div>
     {ls.map((it, i)=>{
-      return <li key={i} className="sub_item"><Link to={`/artist/${it.id}`}>{it.title}</Link></li>
+      return <li key={i} className="sub_item"><Link to={`/artist/${it.id}`}>{it.name}</Link></li>
     })}
 
     </ul>

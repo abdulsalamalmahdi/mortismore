@@ -93,7 +93,7 @@ const menu = useRef(null);
        {/* <img className="logo" src={'./logo512.png'} alt="this is car image" />  */}
        </Link>
        <nav className="nav" >
-        <Link className='link' to="/exibtions">EXIBITIONS</Link> |{' '}
+        <Link className='link' to="/exhibitions">EXHIBITIONS</Link> |{' '}
        <Menu></Menu>
         <Link className='link' to="/crafts">Crafts</Link>
         <Link className='link' to="/links">Links</Link>

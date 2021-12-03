@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Exibtions from './routes/exibtions';
+import Exhibitions from './routes/exhibitions';
 import Crafts from './routes/crafts';
 import Artist from './routes/artist';
 import Home from './routes/home';
@@ -19,7 +19,7 @@ ReactDOM.render(
       <Route path="/" element={<App/>}>
       <Route path="/logo" element={<Logo/>}/>
       <Route path="home" element={<Home />} />
-        <Route path="exibtions" element={<Exibtions />} />
+        <Route path="exhibitions" element={<Exhibitions />} />
         <Route path="crafts" element={<Crafts />} /> 
         <Route path="links" element={<Links />} />
         <Route path="artist/:id" element={<Artist />}> 

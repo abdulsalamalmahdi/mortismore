@@ -51,22 +51,27 @@ export default function Home() {
       <div className="home-container">
         <div className="txt_container">
           <h1>MORE IS MORE</h1>
-          <h3>FUNERAL ARTS AND CRAFTS</h3>
-          <address> RUE DE LIBRE EXAMINE 15</address>
+          <h1>FUNERAL ARTS AND CRAFTS</h1>
+          <address> RUE DU LIBRE EXAMIN 15
+            1070 Anderlecht
+          </address>
 
           <h2>BRASSERIE ATLAS</h2>
-          <section>22/10/2022-23/11/2021</section>
+          <section>22/10/2022-12/12/2021</section>
         </div>
         <div className="carousel-container" id="wrapper">
           <div className="carousel-items" ref={wrapperRef}>
             <div ref={img1} className="carousel-item">
-              <img src={"./1.jpg"} alt="" />
+              <img src={"./Base_00.jpg"} alt="" />
             </div>
             <div ref={img2} className="carousel-item">
-              <img src={"./2.jpg"} alt="" />
+              <img src={"./Floor_02.jpg"} alt="" />
             </div>
             <div ref={img3} className="carousel-item">
               <img src={"./3.jpg"} alt="" />
+            </div>
+            <div ref={img4} className="carousel-item">
+              <img src={"./4.jpg"} alt="" />
             </div>
             <div ref={img4} className="carousel-item">
               <img src={"./4.jpg"} alt="" />
